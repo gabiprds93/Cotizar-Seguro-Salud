@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Cotizar-Seguro-Salud/static/css/main.d1b05096.chunk.css",
-    "main.js": "/Cotizar-Seguro-Salud/static/js/main.900b5df6.chunk.js",
-    "main.js.map": "/Cotizar-Seguro-Salud/static/js/main.900b5df6.chunk.js.map",
+    "main.css": "/Cotizar-Seguro-Salud/static/css/main.d0f98908.chunk.css",
+    "main.js": "/Cotizar-Seguro-Salud/static/js/main.16024cd2.chunk.js",
+    "main.js.map": "/Cotizar-Seguro-Salud/static/js/main.16024cd2.chunk.js.map",
     "runtime-main.js": "/Cotizar-Seguro-Salud/static/js/runtime-main.f7cc77dc.js",
     "runtime-main.js.map": "/Cotizar-Seguro-Salud/static/js/runtime-main.f7cc77dc.js.map",
     "static/js/2.0d278baa.chunk.js": "/Cotizar-Seguro-Salud/static/js/2.0d278baa.chunk.js",
     "static/js/2.0d278baa.chunk.js.map": "/Cotizar-Seguro-Salud/static/js/2.0d278baa.chunk.js.map",
     "index.html": "/Cotizar-Seguro-Salud/index.html",
-    "precache-manifest.398f5e7e56204de643cde34f93fdb1f7.js": "/Cotizar-Seguro-Salud/precache-manifest.398f5e7e56204de643cde34f93fdb1f7.js",
+    "precache-manifest.9ab58cbbf7eb889f65348ef7661dfd1f.js": "/Cotizar-Seguro-Salud/precache-manifest.9ab58cbbf7eb889f65348ef7661dfd1f.js",
     "service-worker.js": "/Cotizar-Seguro-Salud/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/Cotizar-Seguro-Salud/static/css/main.d1b05096.chunk.css.map",
+    "static/css/main.d0f98908.chunk.css.map": "/Cotizar-Seguro-Salud/static/css/main.d0f98908.chunk.css.map",
     "static/js/2.0d278baa.chunk.js.LICENSE": "/Cotizar-Seguro-Salud/static/js/2.0d278baa.chunk.js.LICENSE",
     "static/media/logo.svg": "/Cotizar-Seguro-Salud/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f7cc77dc.js",
     "static/js/2.0d278baa.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.900b5df6.chunk.js"
+    "static/css/main.d0f98908.chunk.css",
+    "static/js/main.16024cd2.chunk.js"
   ]
 }

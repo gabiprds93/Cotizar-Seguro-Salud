@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f803edbe7e9e0e09b3629d84158a525f",
+    "revision": "553e0912617a7542a65dda2056d1e822",
     "url": "/Cotizar-Seguro-Salud/index.html"
   },
   {
-    "revision": "fb8e6f21a9fc36944deb",
-    "url": "/Cotizar-Seguro-Salud/static/css/main.d1b05096.chunk.css"
+    "revision": "997d742d4444aba094a9",
+    "url": "/Cotizar-Seguro-Salud/static/css/main.d0f98908.chunk.css"
   },
   {
     "revision": "1b9a550709cda0419d2a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cotizar-Seguro-Salud/static/js/2.0d278baa.chunk.js.LICENSE"
   },
   {
-    "revision": "fb8e6f21a9fc36944deb",
-    "url": "/Cotizar-Seguro-Salud/static/js/main.900b5df6.chunk.js"
+    "revision": "997d742d4444aba094a9",
+    "url": "/Cotizar-Seguro-Salud/static/js/main.16024cd2.chunk.js"
   },
   {
     "revision": "d76bb190cb952b7d183f",
