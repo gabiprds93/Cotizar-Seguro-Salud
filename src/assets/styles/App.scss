@@ -1,3 +1,35 @@
 @import './variables';
 @import './button';
 @import './text';
+
+.insurance-info-container {
+  color: $whiteColor;
+  > div {
+    padding-left: 120px;
+  }
+  h1 {
+    font-weight: normal;
+  }
+  p {
+    align-items: center;
+    display: flex;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .insurance-info-bg {
+    position: absolute;
+    z-index: -1;
+  }
+  .logo{
+    align-items: center;
+    border-bottom: 1px solid $lightRed;
+    display: flex;
+    justify-content: flex-start;
+    height: 64px;
+  }
+  .content {
+    padding-top: 64px;
+    padding-bottom: 46px;
+  }
+}
