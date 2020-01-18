@@ -19,6 +19,7 @@
   }
   .insurance-info-bg {
     position: absolute;
+    width: 100%;
     z-index: -1;
   }
   .logo{
@@ -32,4 +33,9 @@
     padding-top: 64px;
     padding-bottom: 46px;
   }
+}
+
+.insurance-form-container {
+  padding-top: 96px;
+  text-align: center;
 }
