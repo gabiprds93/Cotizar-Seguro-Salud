@@ -9,7 +9,7 @@ import { InsuranceFormConfig, tipoDocumento } from './InsuranceFormConfig'
 import Button from './Button'
 import InputForm from './Inputs/InputForm'
 
-const InsuranceForm = ({handleSubmit, fetchPersonData}) => {
+const InsuranceForm = ({ handleSubmit, fetchPersonData, pristine, submitting }) => {
   const options = {
     tipoDocumento,
   }
@@ -56,7 +56,7 @@ const InsuranceForm = ({handleSubmit, fetchPersonData}) => {
           <Field name='politics' component={Checkbox} type='checkbox' nativeControlId="politics"></Field>
           <label htmlFor="politics">Acepto la Política de Envío de Comunicaciones Comerciales.</label>
         </div>
-        <Button></Button>
+        <Button disabled={pristine || submitting}>Comencemos</Button>
       </form>
     </div>
   )

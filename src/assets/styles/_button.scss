@@ -3,7 +3,13 @@
   border: none;
   border-radius: 8px;
   color: $whiteColor;
+  cursor: pointer;
   margin: 40px auto;
   padding: 20px 32px;
   text-transform: uppercase;
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: 2px solid transparent;
+  }
 }
