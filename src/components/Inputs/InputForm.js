@@ -1,10 +1,10 @@
 import React from 'react'
 
-import ErrorMessage from './ErrorMessage'
-import Input from 'components/01-atoms/Input/Input'
-import SelectForm from './SelectForm'
-import InputDate from './InputDate'
-import InputBox from './InputBox'
+// import ErrorMessage from './ErrorMessage'
+import Input from './Input'
+// import SelectForm from './SelectForm'
+// import InputDate from './InputDate'
+// import InputBox from './InputBox'
 
 let getWidth = size => {
   let width = (size / 12) * 100
@@ -17,12 +17,12 @@ const chooseTypeInput = (props, ErrorProps) => {
     input,
   } = props
   switch (type) {
-    case 'select':
-      return <SelectForm {...props} />
-    case 'datepicker':
-      return <InputDate {...props} {...input} />
-    case 'checkbox':
-      return <InputBox {...props} {...props.input} />
+    // case 'select':
+    //   return <SelectForm {...props} />
+    // case 'datepicker':
+    //   return <InputDate {...props} {...input} />
+    // case 'checkbox':
+    //   return <InputBox {...props} {...props.input} />
     default:
       return <Input {...props} {...ErrorProps} />
   }
@@ -47,7 +47,7 @@ const InputForm = props => {
       }}
     >
       {chooseTypeInput(props, ErrorProps)}
-      <ErrorMessage {...ErrorProps} />
+      {/* <ErrorMessage {...ErrorProps} /> */}
     </div>
   )
 }
