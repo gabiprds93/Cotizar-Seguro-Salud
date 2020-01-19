@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
+import Checkbox from '@material/react-checkbox'
+import '@material/react-checkbox/dist/checkbox.css'
 
 import {fetchPersonData} from '../redux/actions/actions'
 import { InsuranceFormConfig, tipoDocumento } from './InsuranceFormConfig'
@@ -46,6 +48,14 @@ const InsuranceForm = ({handleSubmit, fetchPersonData}) => {
             />
           )
         })}
+        <div className='checkbox-container'>
+          <Field name='terms' component={Checkbox} type='checkbox' nativeControlId="terms"></Field>
+          <label htmlFor="terms">Acepto la Política de Protección de Datos Personales y los Términos y Condiciones.</label>
+        </div>
+        <div className='checkbox-container'>
+          <Field name='politics' component={Checkbox} type='checkbox' nativeControlId="politics"></Field>
+          <label htmlFor="politics">Acepto la Política de Envío de Comunicaciones Comerciales.</label>
+        </div>
         <Button></Button>
       </form>
     </div>
@@ -59,6 +69,6 @@ export default connect(
   mapDispatchToProps
 )(
   reduxForm({
-    form: 'register_courier',
+    form: 'check-person-data',
   })(InsuranceForm)
 )
