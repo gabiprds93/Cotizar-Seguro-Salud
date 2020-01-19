@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import ErrorMessage from './ErrorMessage'
+import ErrorMessage from './ErrorMessage'
 import Input from './Input'
 import Select from './Select'
 import InputDate from './InputDate'
@@ -37,6 +37,7 @@ const InputForm = props => {
   let displayCss = block ? block : display ? display : 'inline-block'
   return (
     <div
+      className='inputs-form'
       style={{
         display: `${displayCss}`,
         width: `${width}`,
@@ -44,7 +45,7 @@ const InputForm = props => {
       }}
     >
       {chooseTypeInput(props, ErrorProps)}
-      {/* <ErrorMessage {...ErrorProps} /> */}
+      <ErrorMessage {...ErrorProps} />
     </div>
   )
 }

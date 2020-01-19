@@ -46,6 +46,13 @@
   }
 }
 
-.react-datepicker-wrapper {
-  width: 100%;
+.inputs-form{
+  text-align: left;
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  .errorMessage {
+    color: $redColor;
+  }
 }
+
