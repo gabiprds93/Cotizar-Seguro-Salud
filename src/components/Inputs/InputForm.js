@@ -3,8 +3,7 @@ import React from 'react'
 // import ErrorMessage from './ErrorMessage'
 import Input from './Input'
 import Select from './Select'
-// import InputDate from './InputDate'
-// import InputBox from './InputBox'
+import InputDate from './InputDate'
 
 let getWidth = size => {
   let width = (size / 12) * 100
@@ -19,10 +18,8 @@ const chooseTypeInput = (props, ErrorProps) => {
   switch (type) {
     case 'select':
       return <Select {...props} />
-    // case 'datepicker':
-    //   return <InputDate {...props} {...input} />
-    // case 'checkbox':
-    //   return <InputBox {...props} {...props.input} />
+    case 'date':
+      return <InputDate {...props} {...input} />
     default:
       return <Input {...props} {...ErrorProps} />
   }
