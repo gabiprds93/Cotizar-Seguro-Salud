@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 import {fetchPersonData} from '../redux/actions/actions'
 
-const InsuranceForm = () => {
+const InsuranceForm = ({fetchPersonData}) => {
   fetchPersonData()
   return(
     <div className='insurance-form-container'>
