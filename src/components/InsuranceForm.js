@@ -5,6 +5,7 @@ import { Field, reduxForm } from 'redux-form'
 import {fetchPersonData} from '../redux/actions/actions'
 import { InsuranceFormConfig, documentType } from './InsuranceFormConfig'
 import Button from './Button'
+import InputForm from './Inputs/InputForm'
 
 const InsuranceForm = ({handleSubmit, fetchPersonData}) => {
   const options = {
