@@ -2,7 +2,7 @@ import React from 'react'
 
 // import ErrorMessage from './ErrorMessage'
 import Input from './Input'
-// import SelectForm from './SelectForm'
+import Select from './Select'
 // import InputDate from './InputDate'
 // import InputBox from './InputBox'
 
@@ -17,8 +17,8 @@ const chooseTypeInput = (props, ErrorProps) => {
     input,
   } = props
   switch (type) {
-    // case 'select':
-    //   return <SelectForm {...props} />
+    case 'select':
+      return <Select {...props} />
     // case 'datepicker':
     //   return <InputDate {...props} {...input} />
     // case 'checkbox':
