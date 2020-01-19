@@ -3,13 +3,13 @@ import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
 import {fetchPersonData} from '../redux/actions/actions'
-import { InsuranceFormConfig, documentType } from './InsuranceFormConfig'
+import { InsuranceFormConfig, tipoDocumento } from './InsuranceFormConfig'
 import Button from './Button'
 import InputForm from './Inputs/InputForm'
 
 const InsuranceForm = ({handleSubmit, fetchPersonData}) => {
   const options = {
-    documentType,
+    tipoDocumento,
   }
   const submitForm = () => {
     fetchPersonData()
@@ -43,8 +43,6 @@ const InsuranceForm = ({handleSubmit, fetchPersonData}) => {
               styleType={'primary'}
               outlined={true}
               display={obj.display}
-              helperText={obj.helperText}
-              className="input-bg-white"
             />
           )
         })}

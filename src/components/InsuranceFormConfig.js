@@ -1,8 +1,8 @@
 export const InsuranceFormConfig = [
-  { label: 'Tipo de documento', type: 'select', name: 'documentType', required: true },
-  { label: 'Numero de Documento', type: 'text', name: 'documentNumber', required: true },
-  { label: 'Fecha de Nacimiento', type: 'date', name: 'birthday', required: true },
-  { label: 'Celular', type: 'text', name: 'phone', required: true },
+  { type: 'select', name: 'tipoDocumento', required: true, size: 4 },
+  { label: 'Nro. de Documento', type: 'text', name: 'numDocumento', required: true, size: 8 },
+  { label: 'Fecha de Nacimiento', type: 'date', name: 'fecNacimiento', required: true, size: 12, },
+  { label: 'Celular', type: 'text', name: 'telefono', required: true, size: 12, },
   {
     label: 'Acepto la ',
     type: 'checkbox',
@@ -15,7 +15,6 @@ export const InsuranceFormConfig = [
   },
 ]
 
-export const documentType = [
-  { id: 1, name: 'DNI' },
-  { id: 2, name: 'Carnet de Extranjería' }
+export const tipoDocumento = [
+  { value: 2, label: 'DNI' },
 ]
