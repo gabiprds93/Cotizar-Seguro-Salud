@@ -1,6 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
+
+import {fetchPersonData} from '../redux/actions/actions'
 
 const InsuranceForm = () => {
+  fetchPersonData()
   return(
     <div className='insurance-form-container'>
       <h2>
@@ -12,4 +16,9 @@ const InsuranceForm = () => {
   )
 }
 
-export default InsuranceForm
+const mapDispatchToProps = { fetchPersonData }
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(InsuranceForm)
