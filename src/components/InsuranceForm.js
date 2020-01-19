@@ -8,6 +8,7 @@ import {fetchPersonData} from '../redux/actions/actions'
 import { InsuranceFormConfig, tipoDocumento } from './InsuranceFormConfig'
 import Button from './Button'
 import InputForm from './Inputs/InputForm'
+import { validate } from './ValidateInsuranceForm'
 
 const InsuranceForm = ({ handleSubmit, fetchPersonData, pristine, submitting }) => {
   const options = {
@@ -70,5 +71,6 @@ export default connect(
 )(
   reduxForm({
     form: 'check-person-data',
+    validate
   })(InsuranceForm)
 )
