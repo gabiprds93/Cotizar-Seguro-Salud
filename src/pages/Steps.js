@@ -1,14 +1,14 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-grid-system';
 
-import InsuranceInfo from '../components/InsuranceInfo'
+import SideImage from '../components/SideImage'
 
 const Steps = () => {
   return(
     <Container fluid style={{padding: 0}}>
       <Row nogutter>
         <Col md={3}>
-          <InsuranceInfo />
+          <SideImage />
         </Col>
         <Col>
           <div className='step-progress'>
