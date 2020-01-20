@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-grid-system';
 import InsuranceForm from '../components/InsuranceForm'
 import InsuranceInfo from '../components/InsuranceInfo'
 
-const Home = () => {
+const Home = ({ history }) => {
   return(
     <Container fluid style={{padding: 0}}>
       <Row nogutter>
@@ -12,7 +12,7 @@ const Home = () => {
           <InsuranceInfo />
         </Col>
         <Col>
-          <InsuranceForm />
+          <InsuranceForm history={history} />
         </Col>
       </Row>
     </Container>

@@ -10,12 +10,15 @@ import Button from './Button'
 import InputForm from './Inputs/InputForm'
 import { validate } from './ValidateInsuranceForm'
 
-const InsuranceForm = ({ handleSubmit, fetchPersonData, pristine, submitting }) => {
+const InsuranceForm = ({ handleSubmit, fetchPersonData, pristine, submitting, history, errors }) => {
   const options = {
     tipoDocumento,
   }
   const submitForm = () => {
     fetchPersonData()
+    if(!errors){
+      history.push('/pasos')
+    }
   }
   return(
     <div className='insurance-form-container'>
@@ -63,10 +66,16 @@ const InsuranceForm = ({ handleSubmit, fetchPersonData, pristine, submitting }) 
   )
 }
 
+const mapStateToProps = state => {
+  return {
+    errors: state.person.errors
+  }
+}
+
 const mapDispatchToProps = { fetchPersonData }
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(
   reduxForm({
