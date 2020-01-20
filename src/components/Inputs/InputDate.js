@@ -42,7 +42,7 @@ const DateForm = ({
       dateFormat='L'
       dateFormatCalendar="MMMM"
       showTimeSelect={false}
-      selected={value ? value : today}
+      selected={value ? value : onchange(today)}
       onChange={value => onchange(value.toISOString())}
       showYearDropdown
       yearDropdownItemNumber={10}
