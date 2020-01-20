@@ -21,7 +21,7 @@ export const personDataFailure = payload => ({
 export const fetchPersonData = payload => {
   return dispatch =>{
     dispatch(personDataRequest())
-    fetch('https://freestyle.getsandbox.com/dummy/obtenerdatospersona', {
+    return fetch('https://freestyle.getsandbox.com/dummy/obtenerdatospersona', {
       method: "POST",
       headers: { 'Content-Type':'application/json' },
     })
