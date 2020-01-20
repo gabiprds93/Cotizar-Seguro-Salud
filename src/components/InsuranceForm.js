@@ -15,10 +15,11 @@ const InsuranceForm = ({ handleSubmit, fetchPersonData, pristine, submitting, hi
     tipoDocumento,
   }
   const submitForm = () => {
-    fetchPersonData()
-    if(!errors){
-      history.push('/pasos')
-    }
+    fetchPersonData().then(data => {
+      if(!data.errors){
+        history.push('/pasos')
+      }
+    })
   }
   return(
     <div className='insurance-form-container'>
