@@ -6,7 +6,7 @@ import { reduxForm } from 'redux-form'
 import SideImage from '../components/SideImage'
 import StepHeader from '../components/StepHeader'
 import Form from '../components/Form'
-import {firstFormConfig} from '../config/FirstFormConfig'
+import {firstFormConfig, tipoDocumento} from '../config/FirstFormConfig'
 
 const Steps = ({ personData, handleSubmit, pristine, submitting }) => {
   const [header, setHeader] = React.useState({title: [], subtitle: ''})
@@ -42,13 +42,31 @@ const Steps = ({ personData, handleSubmit, pristine, submitting }) => {
 }
 
 const mapStateToProps = state => {
+  const person = state.person
+  let initialValues = {}
+  if(person && person.profile){
+    let data = person.profile.tercero
+    let getDocument = tipoDocumento.find(item => {
+      return item.value === data.tipoDocumento
+    })
+    initialValues = {
+      tipoDocumento: getDocument,
+      numDocumento: data.numDocumento,
+      nombres: data.nombres,
+      apellidoPaterno: data.apellidoPaterno,
+      apellidoMaterno: data.apellidoMaterno,
+      fecNacimiento: data.fecNacimiento,
+      sexo: data.sexo
+    }
+  }
   return {
-    personData: state.person.profile
+    personData: state.person.profile,
+    initialValues
   }
 }
 
 export default connect(
   mapStateToProps,
 )(reduxForm({
-    form: 'first-step',
+  form: 'first-step',
 })(Steps))
