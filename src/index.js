@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import { Route, Switch, HashRouter } from 'react-router-dom'
 
 import './index.css';
 import store from './redux/store'
@@ -11,12 +11,12 @@ import Steps from './pages/Steps'
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/pasos" component={Steps} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </Provider>, 
   document.getElementById('root')
 );
