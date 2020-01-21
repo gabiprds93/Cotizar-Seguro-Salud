@@ -36,7 +36,7 @@ const Steps = ({ personData, handleSubmit, pristine, submitting }) => {
           <StepHeader title={header.title} subtitle={header.subtitle} />
           <div className='step-form'>
             <p className='txt-gray'>Datos personales del titular</p>
-            <Form formConfig={firstFormConfig} handleSubmit={handleSubmit} submitForm={submitForm} pristine={pristine} submitting={submitting}></Form>
+            <Form formConfig={firstFormConfig} handleSubmit={handleSubmit} submitForm={submitForm} pristine={pristine} submitting={submitting} labelBtn='Continuar'></Form>
           </div>
         </Col>
       </Row>
