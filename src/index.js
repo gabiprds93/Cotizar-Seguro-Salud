@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { Route, Switch, HashRouter } from 'react-router-dom'
 
-import './index.css';
+import './index.css'
+import './assets/styles/styles.scss'
 import store from './redux/store'
-import App from './App';
 import Home from './pages/Home'
 import Steps from './pages/Steps'
 
