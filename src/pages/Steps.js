@@ -26,10 +26,13 @@ const Steps = ({ personData, handleSubmit, pristine, submitting }) => {
         </Col>
         <Col>
           <div className='step-progress'>
-            <span className='txt-red'>Paso 1</span> <span className='txt-gray'>de 7</span>
+            <div>
+              <span className='txt-red'>Paso 1</span> <span className='txt-gray'>de 7</span>
+            </div>
           </div>
-          <div className='step-container'>
-            <StepHeader title={header.title} subtitle={header.subtitle} />
+          <StepHeader title={header.title} subtitle={header.subtitle} />
+          <div className='step-form'>
+            <p className='txt-gray'>Datos personales del titular</p>
             <Form formConfig={firstFormConfig} handleSubmit={handleSubmit} submitForm={submitForm} pristine={pristine} submitting={submitting}></Form>
           </div>
         </Col>

@@ -80,12 +80,43 @@
 }
 
 .step-progress{
-  margin: auto;
+  background-color: #F7F8FC;
   padding: 68px 0 36px;
-  width: 60%;
+  &> div {
+    margin: auto;
+    width: 80%;
+  }
+  @media screen and (min-width: $breakpointMD) {
+    background-color: transparent;
+    &> div {
+      width: 60%;
+    }
+  }
 }
-
-.step-container {
-  margin: auto auto 48px;
-  width: 60%;
+.step-header {
+  background-color: #F7F8FC;
+  padding-bottom: 48px;
+  div {
+    margin: auto;
+    width: 80%;
+    h2{
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: $breakpointMD) {
+    background-color: transparent;
+    div {
+      width: 60%;
+    }
+  }
+}
+.step-form {
+  margin: auto;
+  width: 80%;
+  &> p {
+    font-size: 20px;
+  }
+  @media screen and (min-width: $breakpointMD) {
+    width: 60%;
+  }
 }
