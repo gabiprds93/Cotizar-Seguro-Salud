@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Cotizar-Seguro-Salud/static/css/main.121783c9.chunk.css",
-    "main.js": "/Cotizar-Seguro-Salud/static/js/main.d74391e4.chunk.js",
-    "main.js.map": "/Cotizar-Seguro-Salud/static/js/main.d74391e4.chunk.js.map",
+    "main.css": "/Cotizar-Seguro-Salud/static/css/main.285e4457.chunk.css",
+    "main.js": "/Cotizar-Seguro-Salud/static/js/main.96ed4713.chunk.js",
+    "main.js.map": "/Cotizar-Seguro-Salud/static/js/main.96ed4713.chunk.js.map",
     "runtime-main.js": "/Cotizar-Seguro-Salud/static/js/runtime-main.f7cc77dc.js",
     "runtime-main.js.map": "/Cotizar-Seguro-Salud/static/js/runtime-main.f7cc77dc.js.map",
-    "static/css/2.cb8ea05e.chunk.css": "/Cotizar-Seguro-Salud/static/css/2.cb8ea05e.chunk.css",
-    "static/js/2.be97ee82.chunk.js": "/Cotizar-Seguro-Salud/static/js/2.be97ee82.chunk.js",
-    "static/js/2.be97ee82.chunk.js.map": "/Cotizar-Seguro-Salud/static/js/2.be97ee82.chunk.js.map",
+    "static/css/2.05964411.chunk.css": "/Cotizar-Seguro-Salud/static/css/2.05964411.chunk.css",
+    "static/js/2.c915a80d.chunk.js": "/Cotizar-Seguro-Salud/static/js/2.c915a80d.chunk.js",
+    "static/js/2.c915a80d.chunk.js.map": "/Cotizar-Seguro-Salud/static/js/2.c915a80d.chunk.js.map",
     "index.html": "/Cotizar-Seguro-Salud/index.html",
-    "precache-manifest.6e31bd2bd0562291daaf2b4ebf4ffdeb.js": "/Cotizar-Seguro-Salud/precache-manifest.6e31bd2bd0562291daaf2b4ebf4ffdeb.js",
+    "precache-manifest.d6ba13acfe4bf16459ffc66cd7f51a5e.js": "/Cotizar-Seguro-Salud/precache-manifest.d6ba13acfe4bf16459ffc66cd7f51a5e.js",
     "service-worker.js": "/Cotizar-Seguro-Salud/service-worker.js",
-    "static/css/2.cb8ea05e.chunk.css.map": "/Cotizar-Seguro-Salud/static/css/2.cb8ea05e.chunk.css.map",
-    "static/css/main.121783c9.chunk.css.map": "/Cotizar-Seguro-Salud/static/css/main.121783c9.chunk.css.map",
-    "static/js/2.be97ee82.chunk.js.LICENSE": "/Cotizar-Seguro-Salud/static/js/2.be97ee82.chunk.js.LICENSE",
+    "static/css/2.05964411.chunk.css.map": "/Cotizar-Seguro-Salud/static/css/2.05964411.chunk.css.map",
+    "static/css/main.285e4457.chunk.css.map": "/Cotizar-Seguro-Salud/static/css/main.285e4457.chunk.css.map",
+    "static/js/2.c915a80d.chunk.js.LICENSE": "/Cotizar-Seguro-Salud/static/js/2.c915a80d.chunk.js.LICENSE",
     "static/media/logo.svg": "/Cotizar-Seguro-Salud/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f7cc77dc.js",
-    "static/css/2.cb8ea05e.chunk.css",
-    "static/js/2.be97ee82.chunk.js",
-    "static/css/main.121783c9.chunk.css",
-    "static/js/main.d74391e4.chunk.js"
+    "static/css/2.05964411.chunk.css",
+    "static/js/2.c915a80d.chunk.js",
+    "static/css/main.285e4457.chunk.css",
+    "static/js/main.96ed4713.chunk.js"
   ]
 }
