@@ -56,12 +56,6 @@
   }
 }
 
-.step-progress{
-  margin: auto;
-  padding: 68px 0 36px;
-  width: 60%;
-}
-
 .side-image-container {
   .side-image-bg {
     position: absolute;
@@ -83,4 +77,15 @@
       width: 99%;
     }
   }
+}
+
+.step-progress{
+  margin: auto;
+  padding: 68px 0 36px;
+  width: 60%;
+}
+
+.step-container {
+  margin: auto auto 48px;
+  width: 60%;
 }
