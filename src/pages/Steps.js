@@ -14,6 +14,9 @@ const Steps = ({ personData, handleSubmit, pristine, submitting }) => {
     if(personData){
       setHeader({title: ['Hola,', personData.tercero.nombres], subtitle: 'Valida que los datos sean correctos.'})
     }
+    else{
+      setHeader({title: ['Hola,', '¡emepecemos!'], subtitle: 'Cuéntanos un poco sobre ti'})
+    }
   }, [personData])
   const submitForm = () => {
     console.log()
