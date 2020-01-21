@@ -4,6 +4,7 @@
 
 .insurance-info-container {
   color: $whiteColor;
+  height: 109vw;
   > div {
     padding-left: 120px;
   }
@@ -32,6 +33,9 @@
   .content {
     padding-top: 64px;
     padding-bottom: 46px;
+  }
+  @media screen and (min-width: $breakpointSM) {
+    height: auto;
   }
 }
 

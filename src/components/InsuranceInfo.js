@@ -1,7 +1,9 @@
 import React from 'react'
+import { Hidden } from 'react-grid-system'
 
 import logoRimac from '../assets/images/logo-rimac.png'
 import redBackground from '../assets/images/red-background.png'
+import redBackgroundResp from '../assets/images/red-background-resp.png'
 import iconShield from '../assets/icons/ic_shield.png'
 import icMobile from '../assets/icons/ic_mobile.png'
 import icMoney from '../assets/icons/ic_money.png'
@@ -10,7 +12,8 @@ import icClinic from '../assets/icons/ic_clinic.png'
 const InsuranceInfo = () => {
   return(
     <div className='insurance-info-container'>
-      <img alt='Fondo rojo' className='insurance-info-bg' src={redBackground} />
+      <Hidden xs sm><img alt='Fondo rojo' className='insurance-info-bg' src={redBackground} /></Hidden>
+      <Hidden md lg xl><img alt='Fondo rojo' className='insurance-info-bg' src={redBackgroundResp} /></Hidden>
       <div className='logo'>
         <img alt='Logo Rimac' src={logoRimac} />
       </div>
