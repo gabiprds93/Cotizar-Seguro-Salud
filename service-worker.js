@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Cotizar-Seguro-Salud/precache-manifest.5617bb0e24da13961a9c487be0e4765e.js"
+  "/Cotizar-Seguro-Salud/precache-manifest.c94a771987838e9f38341632aa1c4571.js"
 );
 
 self.addEventListener('message', (event) => {
