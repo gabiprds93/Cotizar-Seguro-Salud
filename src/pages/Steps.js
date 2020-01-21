@@ -1,17 +1,23 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-grid-system'
 import { connect } from 'react-redux'
+import { reduxForm } from 'redux-form'
 
 import SideImage from '../components/SideImage'
-import StepHeader from '../components/StepHeader';
+import StepHeader from '../components/StepHeader'
+import Form from '../components/Form'
+import {firstFormConfig} from '../config/FirstFormConfig'
 
-const Steps = ({ personData }) => {
+const Steps = ({ personData, handleSubmit, pristine, submitting }) => {
   const [header, setHeader] = React.useState({title: [], subtitle: ''})
   const dataForStepHeader = React.useMemo(() => {
     if(personData){
       setHeader({title: ['Hola,', personData.tercero.nombres], subtitle: 'Valida que los datos sean correctos.'})
     }
   }, [personData])
+  const submitForm = () => {
+    console.log()
+  }
   return(
     <Container fluid style={{padding: 0}}>
       <Row nogutter>
@@ -24,6 +30,7 @@ const Steps = ({ personData }) => {
           </div>
           <div className='step-container'>
             <StepHeader title={header.title} subtitle={header.subtitle} />
+            <Form formConfig={firstFormConfig} handleSubmit={handleSubmit} submitForm={submitForm} pristine={pristine} submitting={submitting}></Form>
           </div>
         </Col>
       </Row>
@@ -39,4 +46,6 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-)(Steps)
+)(reduxForm({
+    form: 'first-step',
+})(Steps))
